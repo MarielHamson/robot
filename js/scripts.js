@@ -1,10 +1,15 @@
 const robotese = function(translation) {
   for (let index = 0; index <= translation; index += 1) {
-    alert(index);
-  }
+    if (index === 1) {
+      alert("Beep") 
+    } else if (index === 2) {
+    alert("Boop");
+    } else if (index === 3) {
+    alert("Won't you be my neighbor")
+  } else (alert(index))
 
 };
-
+};
 
 
 
