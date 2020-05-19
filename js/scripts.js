@@ -1,13 +1,13 @@
-const robotese = function(translation) {
-  for (let index = 0; index <= translation; index += 1) {
-    if (index === 1) {
-      alert("Beep") 
-    } else if (index === 2) {
-    alert("Boop");
-    } else if (index === 3) {
-    alert("Won't you be my neighbor")
+const robotese = function() {
+for (let index = 0; index <= num; index += 1) {
+const str = index.toString();
+  if (str.includes("3") === true) {
+    alert("Won't you be my neighbor?");
+  } else if (str.includes("2") === true) {
+    alert("Boop!");
+  } else if (str.includes("1") === true) {
+    alert("Beep!");
   } else (alert(index))
-
 };
 };
 
@@ -22,8 +22,8 @@ const robotese = function(translation) {
 $(document).ready(function() {
   $("form#robot-lang").submit(function() {
     event.preventDefault();
-    var translation = $("#words").val();
-    var result = robotese(translation);
+    num = $("#words").val();
+    const result = robotese();
       $(".translation").text(result);
     
     $("#result").show();

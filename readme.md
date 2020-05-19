@@ -13,13 +13,13 @@ _This web app will provide output in a pseudo-robot sounding language following 
       
       The program will substitute robot phrases for certain numbers in the range following these rules: 
 
-  * If the user enters a number that contains the digit 1, all digits are replaced with "Beep!"
+  * If the user enters a number that is or contains the digit 1, all digits are replaced with "Beep!"
       Input: 1
       Output: 0, Beep!
-  * If the user enters a number that contains the digit 2, all digits are replaced with "Boop!"
+  * If the user enters a number that is or contains the digit 2, all digits are replaced with "Boop!"
       Input: 2
       Output: 0, Beep!, Boop!
-  * If the user enters a number that contains the digit 3, all digits are replaced with "Won't you be my neighbor?"
+  * If the user enters a number that is or contains the digit 3, all digits are replaced with "Won't you be my neighbor?"
       Input: 3
       Output: 0, Beep!, Boop!, Won't you be my neighbor
   * If the user enters a number that contains multiples of the above (a 3 and a 2, or a 1 and a 3), the latter rule will apply only. 
