@@ -1,13 +1,9 @@
+//Business Logic
+
 const robotese = function(translation) {
 for (let index = 0; index <= translation; index += 1) {
-  //   if (index === 1) {
-  //     alert("Beep") 
-  //   } else if (index === 2) {
-  //   alert("Boop");
-  //   } else if (index === 3) {
-  //   alert("Won't you be my neighbor")
-  // } else (alert(index))
-const str = index.toString();
+
+  const str = index.toString();
   if (str.includes("3") === true) {
     words = "Won't you be my neighbor?";
   } else if (str.includes("2") === true) {
@@ -15,10 +11,9 @@ const str = index.toString();
   } else if (str.includes("1") === true) {
     words = "Beep!";
   } else words = index;
+
 };
 };
-
-
 
 
 
@@ -34,6 +29,5 @@ $(document).ready(function() {
       $(".translation").text(words);
     
     $("#result").show();
-
   });
 });
