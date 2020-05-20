@@ -1,19 +1,52 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.5.0.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Mr. Roboger's Neighborhood</title>
-  </head>
+<!doctype html>
+<html lang="en">
+<head>
+  <!--Bootstrap Responsivity-->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    
+    <title> Mr. Roboger's Neighborhood </title>
+  <!--Bootstrap, font, and JS/JQ links-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+	  <link href="css/styles.css" rel="stylesheet" />    
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+    <script src="js/jquery-3.5.0.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <!-- <script src="js/bootstrap.min.js" type="text/javascript"></script> -->
+  
+</head>
   <body>
+    <!--Background and content-->
+<div class="main" style="background-image: url('img/background.jpg')">  
+  <div class="cover black">
     <div class="container">
-      <h1>Mr. Roboger's Neighborhood</h1>
+      <h1 class="quiz-name">Mr. Roboger's Neighborhood</h1>
+      <br>
+
+      <!--Submit name in form-->
+      
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputName">Name</label>
+                <input type="name" class="form-control transparent" id = name placeholder="Your name here...">
+              </div>
+              <button type="submit" class="btn btn-danger btn-fill">Start Now</button>
+            </form>
+        </div>
+    </div>
+
+<!--Form submission-->
 
       <form id="robot-lang">
         <div class="form-group">
-          <label for="words">Enter a phrase and see it translated to Mr. Roboger's native language</label>
+          <label for="words">Enter a number and see it translated to Mr. Roboger's native language</label>
           <input id="words" type="text">
         </div>
 
@@ -24,5 +57,7 @@
         <p>Here is your sentence in Mr. Roboger's-ese: <span class="translation">" "</span></p>
       </div>
     </div>
+  </div>
+</div>
   </body>
 </html>

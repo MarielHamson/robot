@@ -26,12 +26,19 @@ const robotese = function(translation) {
 
 //User Logic
 $(document).ready(function() {
-  $("form#robot-lang").submit(function() {
+  $(".form-inline").submit(function(event) {
+    firstName = $("input#name").val();
+
+    $("#robot-lang").show();
+
     event.preventDefault();
-    const translation = $("#words").val();
-    const result = robotese(translation);
-      $(".translation").text(result);
-    
-    $("#result").show();
   });
+
+ $("form#robot-lang").submit(function() {
+ event.preventDefault();
+  const translation = $("#words").val();
+const result = robotese(translation);
+$(".translation").text("Dearest" + firstName + ", " + result );  
+$("#result").show();
+ });
 });
