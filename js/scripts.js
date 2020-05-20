@@ -38,7 +38,7 @@ $(document).ready(function() {
  event.preventDefault();
   const translation = $("#words").val();
 const result = robotese(translation);
-$(".translation").text("Dearest" + firstName + ", " + result );  
+$(".translation").text("Dearest " + firstName + ": " + result );  
 $("#result").show();
  });
 });

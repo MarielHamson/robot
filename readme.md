@@ -25,9 +25,6 @@ _This web app will provide output in a pseudo-robot sounding language following 
   * If the user enters a number that contains multiples of the above (a 3 and a 2, or a 1 and a 3), the larger number rule will apply only. 
       Input: 12
       Output: 0, Beep, Boop, Won't you be my neighbor, 4, 5, 6, 7, 8, 9, Beep, Beep, Boop
-  * If the user enters a non-numerical character, the program returns an error message.
-      Input: Cool
-      Output: Robots only understand numbers at this time.
 
 ## Setup/Installation Requirements
 
