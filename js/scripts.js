@@ -1,24 +1,28 @@
 //Business Logic
 
 const robotese = function(translation) {
-for (let index = 0; index <= translation; index += 1) {
 
-  const str = index.toString();
+  let wordsArray = [];
+
+  for (let index = 0; index <= translation; index += 1) {
+
+  const str = index.toString(); 
+
   if (str.includes("3") === true) {
-    words = "Won't you be my neighbor?";
+    wordsArray.push(" Won't you be my neighbor?");
   } else if (str.includes("2") === true) {
-    words = "Boop!";
+    wordsArray.push(" Boop!");
   } else if (str.includes("1") === true) {
-    words = "Beep!";
-  } else words = index;
+    wordsArray.push(" Beep!");
+  } else { 
+    wordsArray.push(" " + str);
+  }
+
+  };
+
+  return wordsArray;
 
 };
-};
-
-
-
-
-
 
 //User Logic
 $(document).ready(function() {
@@ -26,7 +30,7 @@ $(document).ready(function() {
     event.preventDefault();
     const translation = $("#words").val();
     const result = robotese(translation);
-      $(".translation").text(words);
+      $(".translation").text(result);
     
     $("#result").show();
   });
